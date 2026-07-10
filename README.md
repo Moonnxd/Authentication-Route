@@ -57,7 +57,7 @@ src/
       authController.js     # signup, login, refresh, logout logic
   utils/
     tokens.js               # generateAccessToken, generateRefreshToken
-app.js                       # routes + server entry point
+server.js                       # routes + server entry point
 .env                          # secrets and config (not committed)
 ```
 
