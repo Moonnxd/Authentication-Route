@@ -155,22 +155,3 @@ Remember to change it back to `'15m'` afterward.
 
 ---
 
-## Key Concepts for Learners
-
-- **JWT payloads are not encrypted**, only signed. Never put sensitive data, like `password_hash`, inside a token payload, since anyone can decode it at jwt.io.
-- **A JWT's signature, not the payload, is what makes it trustworthy.** Verification checks that the token was signed with your secret and hasn't been tampered with or expired.
-- **`req.cookies` (plural), not `req.cookie`**, a very common typo when reading cookies with `cookie-parser`.
-- **`res` is for responses, `req` is for requests**, cookies are set on `res`, and read from `req`.
-- **Always match your `?` placeholders to your parameter array, in order**, when writing parameterized SQL queries.
-- **HTTP status codes matter:** `400` for bad input, `401` for "who are you," `403` for "I know who you are but you can't do this," `500` for server side bugs. Login failures use `401` (not `404`) so attackers can't tell whether a username exists.
-
----
-
-## Possible Next Steps
-
-This project deliberately stays minimal. Natural extensions once you're comfortable with the basics:
-
-- Rate limiting on `/api/login` to prevent brute force attempts
-- Refresh token rotation (issue a new refresh token on every `/api/refresh` call)
-- Password reset / forgot password flow
-- Role based access control (if your use case needs it)
