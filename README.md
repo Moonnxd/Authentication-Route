@@ -92,10 +92,8 @@ Registers a new user.
 **Body:**
 ```json
 {
-  "display_name": "Mon Ropeta",
-  "username": "mon",
-  "email": "mon@example.com",
-  "password": "yourpassword"
+  "username": "raymond",
+  "password": "mon123"
 }
 ```
 
@@ -109,8 +107,8 @@ Authenticates a user and issues both tokens as httpOnly cookies.
 **Body:**
 ```json
 {
-  "username": "mon",
-  "password": "yourpassword"
+  "username": "raymond",
+  "password": "mon123"
 }
 ```
 
