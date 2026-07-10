@@ -137,7 +137,7 @@ Example protected route. Requires a valid access token cookie.
 
 ---
 
-## Testing with Postman
+## Tested with Postman
 
 1. Postman automatically stores and resends cookies per domain, no manual copying needed, as long as you hit the same base URL across requests.
 2. **Login** first (`POST /api/login`), then check the **Cookies** tab (near the Send button) to confirm `accessToken` and `refreshToken` were set.
